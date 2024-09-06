@@ -37,3 +37,5 @@ export default defineConfig({
     envDir: resolve(__dirname, './env'),
 });
 ```
+
+### 安裝 Tailwind

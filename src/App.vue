@@ -1,34 +1,57 @@
 <script setup lang="ts">
+import { ref,onMounted } from 'vue'
+import axios from 'axios'
 import HelloWorld from './components/HelloWorld.vue'
+
+interface listType {
+  UID?: string;
+  category?: string;
+  comment?: string;
+  descriptionFilterHtml?: string;
+  discountInfo?: string | any;
+  editModifyDate?: string;
+  endDate?: string;
+  hitRate?: number;
+  imageUrl?: string;
+  masterUnit?: object;
+  otherUnit?: object;
+  showInfo?: object;
+  showUnit?: string;
+  sourceWebName?: string | any;
+  sourceWebPromote?: string;
+  startDate?: string | any;
+  subUnit?: object;
+  supportUnit?: object;
+  version?: string;
+  title?: string | any;
+  webSales?: string;
+}
+const lists = ref<listType[]>([]);
+const getData = async () => {
+  try {
+    const api = `${import.meta.env.VITE_API_URL}/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=200`;
+    await axios.get(api)
+    const res = await axios.get(api);
+    // console.log('culture', res.data, typeof res.data[0].masterUnit
+    //   , 'otherUnit', typeof res.data[0].otherUnit, 'showInfos', typeof res.data[0].showInfo);
+    if (res.status === 200) {
+      lists.value = res.data;
+      console.log('culture',lists.value)
+    }
+   
+  } catch (error) {
+    console.log(error)
+  }
+
+}
+onMounted(() => {
+  getData();
+})
 </script>
 
 <template>
 
   <router-view></router-view>
-  <HelloWorld msg="Vite + Vue" />
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-  <div class="p-6 max-w-sm mx-auto rounded-xl shadow-lg flex items-center space-x-4 bg-slate-900 p-8 pt-7">
 
-  <div>
-    <div class="text-xl font-medium text-white">ChitChat</div>
-    <p class="text-white">You have a new message!</p>
-  </div>
-</div>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
