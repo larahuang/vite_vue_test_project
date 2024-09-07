@@ -24,8 +24,11 @@ const alertWidth = ref<string>('550');
 </route>
 
 <template>
+<div class="flex" style="justify-content: space-between;">
+   <a class="link" @click.prevent="openAlert">打開</a>
   <Button :href="href" :target="target"/>
-  <a class="link" @click.prevent="openAlert">打開</a>
+</div>
+  
   <GuessAge/>
     <Teleport  to="body">
         <Alert
