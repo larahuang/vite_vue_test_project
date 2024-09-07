@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1725720288461" clover="3.2.0">
-  <project timestamp="1725720288461" name="All files">
-    <metrics statements="542" coveredstatements="43" conditionals="17" coveredconditionals="1" methods="17" coveredmethods="1" elements="576" coveredelements="45" complexity="0" loc="542" ncloc="542" packages="13" files="21" classes="21"/>
+<coverage generated="1725727629973" clover="3.2.0">
+  <project timestamp="1725727629973" name="All files">
+    <metrics statements="591" coveredstatements="48" conditionals="18" coveredconditionals="1" methods="18" coveredmethods="1" elements="627" coveredelements="50" complexity="0" loc="591" ncloc="591" packages="13" files="23" classes="23"/>
     <package name="vite_vue_test_project">
       <metrics statements="17" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
       <file name="postcss.config.js" path="/Users/larahuang/Desktop/作品集/部署/Vite_Vue/vite_vue_test_project/postcss.config.js">
@@ -400,7 +400,40 @@
       </file>
     </package>
     <package name="vite_vue_test_project.src.components">
-      <metrics statements="53" coveredstatements="36" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <metrics statements="80" coveredstatements="41" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="A.vue" path="/Users/larahuang/Desktop/作品集/部署/Vite_Vue/vite_vue_test_project/src/components/A.vue">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+      </file>
+      <file name="Alert.vue" path="/Users/larahuang/Desktop/作品集/部署/Vite_Vue/vite_vue_test_project/src/components/Alert.vue">
+        <metrics statements="22" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+      </file>
       <file name="GuessAge.vue" path="/Users/larahuang/Desktop/作品集/部署/Vite_Vue/vite_vue_test_project/src/components/GuessAge.vue">
         <metrics statements="20" coveredstatements="20" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
@@ -587,7 +620,7 @@
       </file>
     </package>
     <package name="vite_vue_test_project.src.views.frontdesk">
-      <metrics statements="24" coveredstatements="0" conditionals="3" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <metrics statements="46" coveredstatements="0" conditionals="3" coveredconditionals="0" methods="3" coveredmethods="0"/>
       <file name="[...all].vue" path="/Users/larahuang/Desktop/作品集/部署/Vite_Vue/vite_vue_test_project/src/views/frontdesk/[...all].vue">
         <metrics statements="4" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
@@ -596,10 +629,32 @@
         <line num="6" count="0" type="stmt"/>
       </file>
       <file name="index.vue" path="/Users/larahuang/Desktop/作品集/部署/Vite_Vue/vite_vue_test_project/src/views/frontdesk/index.vue">
-        <metrics statements="3" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <metrics statements="25" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="4" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
       </file>
       <file name="pinia.vue" path="/Users/larahuang/Desktop/作品集/部署/Vite_Vue/vite_vue_test_project/src/views/frontdesk/pinia.vue">
         <metrics statements="17" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
