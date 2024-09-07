@@ -2,7 +2,7 @@
 import { ref,onMounted } from 'vue'
 import axios from 'axios'
 import HelloWorld from './components/HelloWorld.vue'
-
+import GuessAge from './components/GuessAge.vue'
 interface listType {
   UID?: string;
   category?: string;
@@ -26,6 +26,7 @@ interface listType {
   title?: string | any;
   webSales?: string;
 }
+const title=ref<string>('Guess User Age App')
 const lists = ref<listType[]>([]);
 const getData = async () => {
   try {
@@ -51,5 +52,6 @@ onMounted(() => {
 
 <template>
   <router-view></router-view>
+  <GuessAge :title="title"/>
 </template>
 
