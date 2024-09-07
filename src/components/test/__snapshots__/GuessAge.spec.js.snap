@@ -1,7 +1,7 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`GuessAge > snapshot UI testing 1`] = `"Firsthand:  Age:  Enter Firstname Guess Age Save my data"`;
+exports[`GuessAge > snapshot UI testing 1`] = `"姓名:  年齡:  Enter Firstname 獲取年齡"`;
 
-exports[`GuessAge > 快照 UI 測試 1`] = `"Firsthand:  Age:  Enter Firstname Guess Age Save my data"`;
+exports[`GuessAge > 快照 UI 測試 1`] = `"姓名:  年齡:  Enter Firstname 獲取年齡"`;
 
-exports[`snapshot UI testing 1`] = `"Firsthand:  Age:  Enter Firstname Guess Age Save my data"`;
+exports[`snapshot UI testing 1`] = `"姓名:  年齡:  Enter Firstname 獲取年齡"`;

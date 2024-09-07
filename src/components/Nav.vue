@@ -8,7 +8,7 @@
         :class="pageNameActive == item.id_set ? 'isActive' : ''"
          @click="sendMenuClickActive(item)"
     >
-    <router-link :to="item.href" >   
+    <router-link :to="item.href" data-test="button" >   
         {{ item.title }}
     </router-link>    
     </li>
