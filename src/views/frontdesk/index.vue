@@ -1,6 +1,5 @@
 <script setup lang="ts">
   import { ref,onMounted } from 'vue'
-  import axios from 'axios'
   import GuessAge from '../../components/GuessAge.vue'
   import Button from '../../components/A.vue'
   import Alert from '../../components/Alert.vue'
@@ -8,7 +7,7 @@
   const href = ref<string>('https://ithelp.ithome.com.tw/')
   const target = ref<string>('_blank')
   const isOpnAlert = ref<boolean>(false)
-const alertWidth = ref<string>('550');
+  const alertWidth = ref<string>('550');
   const openAlert = () => {
     isOpnAlert.value = true;
   }
@@ -24,7 +23,7 @@ const alertWidth = ref<string>('550');
 </route>
 
 <template>
-<div class="flex" style="justify-content: space-between;">
+<div data-test="index"  class="flex" style="justify-content: space-between;">
    <a class="link" @click.prevent="openAlert">打開</a>
   <Button :href="href" :target="target"/>
 </div>

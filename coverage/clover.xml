@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1725727629973" clover="3.2.0">
-  <project timestamp="1725727629973" name="All files">
-    <metrics statements="591" coveredstatements="48" conditionals="18" coveredconditionals="1" methods="18" coveredmethods="1" elements="627" coveredelements="50" complexity="0" loc="591" ncloc="591" packages="13" files="23" classes="23"/>
+<coverage generated="1725745823329" clover="3.2.0">
+  <project timestamp="1725745823329" name="All files">
+    <metrics statements="611" coveredstatements="61" conditionals="18" coveredconditionals="1" methods="19" coveredmethods="1" elements="648" coveredelements="63" complexity="0" loc="611" ncloc="611" packages="13" files="25" classes="25"/>
     <package name="vite_vue_test_project">
       <metrics statements="17" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
       <file name="postcss.config.js" path="/Users/larahuang/Desktop/作品集/部署/Vite_Vue/vite_vue_test_project/postcss.config.js">
@@ -400,7 +400,7 @@
       </file>
     </package>
     <package name="vite_vue_test_project.src.components">
-      <metrics statements="80" coveredstatements="41" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <metrics statements="97" coveredstatements="54" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="0"/>
       <file name="A.vue" path="/Users/larahuang/Desktop/作品集/部署/Vite_Vue/vite_vue_test_project/src/components/A.vue">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
@@ -434,10 +434,21 @@
         <line num="31" count="0" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
       </file>
-      <file name="GuessAge.vue" path="/Users/larahuang/Desktop/作品集/部署/Vite_Vue/vite_vue_test_project/src/components/GuessAge.vue">
-        <metrics statements="20" coveredstatements="20" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="Content.vue" path="/Users/larahuang/Desktop/作品集/部署/Vite_Vue/vite_vue_test_project/src/components/Content.vue">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+      </file>
+      <file name="GuessAge.vue" path="/Users/larahuang/Desktop/作品集/部署/Vite_Vue/vite_vue_test_project/src/components/GuessAge.vue">
+        <metrics statements="21" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
@@ -498,6 +509,18 @@
         <line num="23" count="0" type="stmt"/>
         <line num="24" count="0" type="stmt"/>
         <line num="25" count="0" type="stmt"/>
+      </file>
+      <file name="Test.vue" path="/Users/larahuang/Desktop/作品集/部署/Vite_Vue/vite_vue_test_project/src/components/Test.vue">
+        <metrics statements="9" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
       </file>
     </package>
     <package name="vite_vue_test_project.src.layouts">
@@ -620,7 +643,7 @@
       </file>
     </package>
     <package name="vite_vue_test_project.src.views.frontdesk">
-      <metrics statements="46" coveredstatements="0" conditionals="3" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <metrics statements="49" coveredstatements="0" conditionals="3" coveredconditionals="0" methods="3" coveredmethods="0"/>
       <file name="[...all].vue" path="/Users/larahuang/Desktop/作品集/部署/Vite_Vue/vite_vue_test_project/src/views/frontdesk/[...all].vue">
         <metrics statements="4" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
@@ -629,9 +652,11 @@
         <line num="6" count="0" type="stmt"/>
       </file>
       <file name="index.vue" path="/Users/larahuang/Desktop/作品集/部署/Vite_Vue/vite_vue_test_project/src/views/frontdesk/index.vue">
-        <metrics statements="25" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <metrics statements="28" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
         <line num="6" count="0" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
@@ -644,17 +669,18 @@
         <line num="14" count="0" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
         <line num="27" count="0" type="stmt"/>
         <line num="28" count="0" type="stmt"/>
         <line num="29" count="0" type="stmt"/>
-        <line num="30" count="0" type="stmt"/>
         <line num="31" count="0" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
         <line num="33" count="0" type="stmt"/>
         <line num="34" count="0" type="stmt"/>
         <line num="35" count="0" type="stmt"/>
         <line num="36" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
       </file>
       <file name="pinia.vue" path="/Users/larahuang/Desktop/作品集/部署/Vite_Vue/vite_vue_test_project/src/views/frontdesk/pinia.vue">
         <metrics statements="17" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
