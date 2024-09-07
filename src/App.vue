@@ -2,7 +2,7 @@
 import { ref,onMounted } from 'vue'
 import axios from 'axios'
 import HelloWorld from './components/HelloWorld.vue'
-import GuessAge from './components/GuessAge.vue'
+
 interface listType {
   UID?: string;
   category?: string;
@@ -52,6 +52,5 @@ onMounted(() => {
 
 <template>
   <router-view></router-view>
-  <GuessAge :title="title"/>
 </template>
 

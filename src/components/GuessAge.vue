@@ -1,18 +1,22 @@
 <template>
   <h1 data-test="title">{{ title }}</h1>
   <div class="card">
-   <div style="width:400px;height:130px;margin-top:20px;border-style: dotted;" >
-   <br>
-    <span>Firsthand: {{firstname}}</span> <br>
-    <span>Age: {{age}}</span> 
+   <div >
+    <span>姓名: {{firstname}}</span> <br>
+    <span>年齡: {{age}}</span> 
 
     </div>
-     <label> Enter Firstname </label><br>
-     <input type="text" v-model="search" style="font-size:20px;border-radius:10px; border:2px solid red"/> 
-   <a style="width:50px;height: 50px; background:red;"
+    <div class="search_content">
+     <label> Enter Firstname </label>
+     <input type="text" 
+     class="from_control"
+     v-model="search"
+     placeholder="搜尋姓名" 
+     /> 
+   <button 
    data-test="getAge"
-   @click="getAge">Guess Age</a>
-    <input type="radio" value="pop"> <label>Save my data</label>
+   @click="getAge">獲取年齡</button>
+   </div>
   </div>
 </template>
 
@@ -25,10 +29,11 @@ const props = defineProps({
     const search = ref<string>('');
     const age = ref<string>('');
     const firstname = ref<string>('');
-    const getAge =() => { 
+    const getAge = () => { 
         fetch('https://api.agify.io/?name='+ search.value)
             .then(response => response.json())
-            .then(data => {
+          .then(data => {
+              console.log(data)
                 age.value = data.age
                 firstname.value = data.name
                 search.value=""

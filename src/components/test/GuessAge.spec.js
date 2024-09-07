@@ -1,7 +1,7 @@
 import { describe, it, expect, afterEach, beforeAll, afterAll, beforeEach } from 'vitest'
  import { setupServer } from 'msw/node'
-import { mount } from "@vue/test-utils";
-import GuessAge from "../GuessAge.vue";
+import { mount } from "@vue/test-utils"
+import GuessAge from "../GuessAge.vue"
 //引入Api模擬
 import { restHandlers }  from "../../mocks/handlers";
 
