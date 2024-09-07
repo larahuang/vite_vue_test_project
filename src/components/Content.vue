@@ -3,6 +3,12 @@
     Root
     <childComponent :title="title"/>
     <childComponent :title="title"/>
+    <div>
+        <ul>
+            <li>a</li>
+            <li>b</li>
+        </ul>
+    </div> 
 </div>
 </template>
 
