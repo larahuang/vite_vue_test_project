@@ -1,10 +1,10 @@
 <script setup lang="ts">
   import { ref,onMounted } from 'vue'
   import axios from 'axios'
-  
   import GuessAge from '../../components/GuessAge.vue'
-import Button from '../../components/A.vue'
-import Alert from '../../components/Alert.vue'
+  import Button from '../../components/A.vue'
+  import Alert from '../../components/Alert.vue'
+  const title = ref<string>('Guess User Age App')
   const href = ref<string>('https://ithelp.ithome.com.tw/')
   const target = ref<string>('_blank')
   const isOpnAlert = ref<boolean>(false)
@@ -29,7 +29,7 @@ const alertWidth = ref<string>('550');
   <Button :href="href" :target="target"/>
 </div>
   
-  <GuessAge/>
+  <GuessAge :title="title" />
     <Teleport  to="body">
         <Alert
         :isOpnAlert="isOpnAlert"

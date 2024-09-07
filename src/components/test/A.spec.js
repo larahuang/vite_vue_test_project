@@ -26,5 +26,16 @@ describe('A標籤', () =>
              console.log('取得所有A標籤訊息', wrapper.find('[data-test="link"]').attributes())
              expect(wrapper.find('[data-test="link"]').classes()).toContain('link')
          }
+     })
+    it('取得A標籤所有class訊息', () =>
+    { 
+        if (typeof document !== 'undefined') { 
+            expect(wrapper.find('[data-test="link"]').classes()).toContain('link')
+            expect(wrapper.find('[data-test="link"]').classes()).toContain('A')
+            expect(wrapper.find('[data-test="link"]').classes()).toContain('C')
+            expect(wrapper.find('[data-test="link"]').classes()).toContain('B')
+            console.log('取得A標籤所有class訊息', wrapper.find('[data-test="link"]').classes())
+            //[ 'link', 'A', 'C', 'B' ]
+        }
     })
 })

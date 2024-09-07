@@ -1,5 +1,5 @@
 <template>
-  <h1 data-test="title mt-2">{{ title }}</h1>
+  <h1 data-test="title" >{{ title }}</h1>
   <div class="card">
    <div style="margin-top: 35px;">
     <span>姓名: {{firstname}}</span> <br>
