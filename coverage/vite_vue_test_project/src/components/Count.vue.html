@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for vite_vue_test_project/src/components/Nav.vue</title>
+    <title>Code coverage report for vite_vue_test_project/src/components/Count.vue</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../../prettify.css" />
     <link rel="stylesheet" href="../../../base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../../index.html">All files</a> / <a href="index.html">vite_vue_test_project/src/components</a> Nav.vue</h1>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">vite_vue_test_project/src/components</a> Count.vue</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>11/11</span>
+                <span class='fraction'>7/7</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>11/11</span>
+                <span class='fraction'>7/7</span>
             </div>
         
             
@@ -77,74 +77,35 @@
 <a name='L12'></a><a href='#L12'>12</a>
 <a name='L13'></a><a href='#L13'>13</a>
 <a name='L14'></a><a href='#L14'>14</a>
-<a name='L15'></a><a href='#L15'>15</a>
-<a name='L16'></a><a href='#L16'>16</a>
-<a name='L17'></a><a href='#L17'>17</a>
-<a name='L18'></a><a href='#L18'>18</a>
-<a name='L19'></a><a href='#L19'>19</a>
-<a name='L20'></a><a href='#L20'>20</a>
-<a name='L21'></a><a href='#L21'>21</a>
-<a name='L22'></a><a href='#L22'>22</a>
-<a name='L23'></a><a href='#L23'>23</a>
-<a name='L24'></a><a href='#L24'>24</a>
-<a name='L25'></a><a href='#L25'>25</a>
-<a name='L26'></a><a href='#L26'>26</a>
-<a name='L27'></a><a href='#L27'>27</a>
-<a name='L28'></a><a href='#L28'>28</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L15'></a><a href='#L15'>15</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
-&lt;div class="flex justify-center header"&gt;
-   &lt;a href="/me"&gt;  &lt;b  class="flex justify-center"&gt;&lt;h1&gt;Lara 單元測試&lt;/h1&gt;&lt;/b&gt; &lt;/a&gt;
-&lt;/div&gt;
-&lt;ul class="nav flex justify-center h-12 leading-10 border_bottom_solid_2 bg_c6e2ff"&gt;
-    &lt;li class="flex mx-2" 
-        v-for="(item,id_set) in navLists" :key="id_set"
-        :class="pageNameActive == item.id_set ? 'isActive' : ''"
-         @click="sendMenuClickActive(item)"
-    &gt;
-    &lt;router-link :to="item.href" data-test="button" &gt;   
-        {{ item.title }}
-    &lt;/router-link&gt;    
-    &lt;/li&gt;
-&lt;/ul&gt;
+  &lt;button class="link" data-test="addCount" @click.prevent="sendAddCount"&gt;Add&lt;/button&gt;
+  &lt;p data-test="count"&gt;{{ count }}&lt;/p&gt;
 &lt;/template&gt;
 &nbsp;
 &lt;script setup lang="ts"&gt;
-import {navType} from '../types/nav'
     const props = defineProps({ 
-        pageNameActive:{type:String},
-        navLists:{type:Object}
+        count:{type:Number},
     })
-    const emit = defineEmits(['sendMenuClickActive'])
-    const sendMenuClickActive=(_item:navType)=&gt;{
-        emit('sendMenuClickActive',_item)
+    const emit = defineEmits(['sendAddCount'])
+    const sendAddCount=()=&gt;{
+        emit('sendAddCount')
     }
-&lt;/script&gt;</pre></td></tr></table></pre>
+&lt;/script&gt;
+&nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->

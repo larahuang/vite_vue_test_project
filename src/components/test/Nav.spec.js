@@ -33,19 +33,21 @@ describe('Nav.vue 從父元素 frontLayout.vue 取得以下陣列', () =>
       
     });
     it('Active 傳遞初始值時渲染', () => { 
-         expect(pageNameActive).toMatch(pageNameActive);
+        expect(pageNameActive).toMatch(pageNameActive);
     })
 
-    it('點擊時發出當前資料的事件',  () =>
+    it('點擊時發出當前資料的事件，Li會新增isActive Class',  async() =>
     { 
         if (typeof document !== 'undefined') {
             const items = wrapper.findAll('li');
-            const button = wrapper.find('li');
-            button.trigger('click');
+            const li = wrapper.find('li');
+           // await li.trigger('click');
+            await wrapper.get('[data-test="button"]').trigger('click')
             expect(pageNameActive).toMatch(items[0].id_set);
             expect(pageNameActive).toMatch(items[1].id_set)
             expect(pageNameActive).toMatch(items[2].id_set)
-            expect(button.find('li.isActive'));
+           // expect(li.find('li.isActive'));
+             expect(wrapper.get('li').classes()).toContain('isActive')
         }
     })
     it('按一下時檢索當前資料的事件', async () =>

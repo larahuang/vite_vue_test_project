@@ -10,7 +10,8 @@
      <label> Enter Firstname </label>
      <input type="text" 
      class="from_control"
-     v-model="search"
+      :value="search"
+       @input="emitSearchValue"
      placeholder="搜尋姓名" 
      /> 
    <button 
@@ -24,19 +25,24 @@
 import { ref,computed } from 'vue'
 
 const props = defineProps({ 
-        title:{type:String},
+  title: { type: String },
+   search: { type: String },
 })
-    const search = ref<string>('');
+    const emit = defineEmits(['update:search'])
+    const emitSearchValue = (evt:any) =>{ 
+        emit('update:search', evt.target.value)
+    }
+   // const search = ref<string>('');
     const age = ref<string>('');
     const firstname = ref<string>('');
     const getAge = () => { 
-        fetch('https://api.agify.io/?name='+ search.value)
+        fetch('https://api.agify.io/?name='+ props.search)
             .then(response => response.json())
           .then(data => {
               console.log(data)
                 age.value = data.age
                 firstname.value = data.name
-                search.value=""
+                props.search=""
             })
     }
 </script>

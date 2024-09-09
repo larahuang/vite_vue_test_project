@@ -54,7 +54,7 @@
     --bs-text-color: #808080;
     --bs-line-height: 1.5;
     --bs-font-weight: 400;
-    --bs-font-size: 14px;
+    --bs-font-size: 16px;
     --bs-font-family:"Mabry Pro","Noto Sans TC","微軟正黑體","Microsoft JhengHei","Heiti TC","黑體","Nunito Sans",sans-serif;
 }
 /*套用變數*/
@@ -72,6 +72,21 @@ body {
 #app{
     overflow-x: hidden;
 }
+.mt-1{
+    margin-top: 5px;
+}
+.mt-2{
+    margin-top: 10px;
+}
+.mt-3{
+    margin-top: 15px;
+}
+.mt-4{
+    margin-top: 20px;
+}
+.mt-5{
+    margin-top: 25px;
+}
 main{
     width: 90%;
     max-width: 90%;
@@ -80,18 +95,22 @@ main{
 }
 input{
     font-size: 20px;
-    border-radius: 10px;
-    border: 2px solid #80808080;
+    border-radius: .25rem;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    height: calc(1.5em + .55rem + 2px);
+    padding: .175rem .75rem;
     &::placeholder{
           color: #80808080;
+          font-size: 14px;
           padding: 5px;
     }
     &:focus-visible {
-    outline:#333 auto 1px;
+        outline:#bee5fa auto 1px;
     }
 }
-.link{
-  position: relative;
+.link,.btn{
+    position: relative;
     padding: 6px 12px;
     border-radius: 5px;
     display: flex;
@@ -103,6 +122,28 @@ input{
     &:hover,&:focus{
         color:white;
          background-color: #338236;
+    }
+}
+.cancel{
+     background-color: #979897;
+     &:hover,&:focus{
+        color:white;
+         background-color: #0e0e0e;
+    }
+}
+.submit{
+     background-color: #4caf50;
+     &:hover,&:focus{
+        color:white;
+         background-color: #338236;
+    }
+    &.disabled{
+        cursor: not-allowed;
+        background-color: #7ab47c;
+         &:hover,&:focus{
+            color:white;
+             background-color: #7ab47c;
+        }
     }
 }
 button{

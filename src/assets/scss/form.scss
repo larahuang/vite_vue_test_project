@@ -1,0 +1,45 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+   //  border:1px solid red;
+    .input_item{
+         width: 100%;
+         display: flex;
+         margin:0 auto;
+         align-items: center;
+         flex-wrap: wrap;
+         height:68px;
+         padding: 0;
+       //  border:1px solid red;
+         label{
+            width: 90px;
+         }
+         input{
+            width: calc(100% - 90px);
+         }
+         .error_message{
+            color:red;
+            font-size: smaller;
+            margin-left: 90px;
+            height: 30px;
+             width: 80%;
+         }
+         &.verification{
+            input{
+               width: 75%;
+            }
+            .codeBox{
+               margin: auto 10px;
+               letter-spacing: 7px;
+            }
+            .icon-spinner11{
+               margin-left: 10px;
+            }
+         } 
+    }
+}
+.error{
+   border-color:red;
+}

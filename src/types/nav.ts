@@ -4,3 +4,9 @@ export interface navType{
     href?: string | any,
     icon?: string | any,
 }
+
+export interface todosType{
+        id: number,
+        text: string,
+          completed: boolean,
+}
