@@ -1,0 +1,47 @@
+.btn {
+   position: relative;
+    padding: 6px 12px;
+    border-radius: 5px;
+    display: flex;
+    width: 80px;
+   align-self: center;
+   justify-content: center;
+   color:#333;
+}
+.link{
+     background-color: #979897;
+     color:white;
+     &:hover,&:focus{
+        color:white;
+         background-color: #0e0e0e;
+    }
+}
+.cancel{
+     background-color: #979897;
+     &:hover,&:focus{
+        color:white;
+         background-color: #0e0e0e;
+    }
+}
+.submit{
+    color:white;
+     background-color: #4caf50;
+     &:hover,&:focus{
+        color:white;
+         background-color: #338236;
+    }
+    &.disabled{
+        cursor: not-allowed;
+        background-color: #7ab47c;
+         &:hover,&:focus{
+            color:white;
+             background-color: #7ab47c;
+        }
+    }
+}
+button{
+    position: relative;
+    padding: 6px 12px;
+    border-radius: 5px;
+    background-color: #0dcaf0;
+}

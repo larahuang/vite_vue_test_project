@@ -59,7 +59,7 @@ const search = ref<string>('');
         errorCheckPassword.value = true;
       } else if (loginForms.value.password?.search(regPassword) == -1) { 
         console.log(loginForms.value.password.length,regPassword)
-        messageCheckPassword.value = '密碼不必須是6~30個字符以上！'; 
+        messageCheckPassword.value = '密碼必須是6~30個字符以上！'; 
         errorCheckPassword.value = true;
       } else {
         messageCheckPassword.value = '';
@@ -121,7 +121,7 @@ const search = ref<string>('');
 
 <template>
 <div  class="flex" style="justify-content: space-between;">
-   <a class="link" @click.prevent="openAlert">打開</a>
+   <a class="btn link" @click.prevent="openAlert">打開</a>
   <Button :href="href" :target="target"/>
 </div>
   

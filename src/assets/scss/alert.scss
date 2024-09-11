@@ -1,0 +1,27 @@
+.alert {
+    position: fixed;
+    z-index: 999;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1610108a;
+    overflow-y: auto;
+    .alert-main{
+        background-color: #fff;
+        margin: 100px auto;
+        border-radius: 8px;
+        padding: 25px;
+        .alert-header{
+            display: flex;
+            justify-content: flex-end;
+            i{
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+        .alert-body{
+            margin-top: 20px;
+        }
+    }
+}

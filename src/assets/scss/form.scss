@@ -1,3 +1,19 @@
+input{
+    font-size: 20px;
+    border-radius: .25rem;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    height: calc(1.5em + .55rem + 2px);
+    padding: .175rem .75rem;
+    &::placeholder{
+          color: #80808080;
+          font-size: 14px;
+          padding: 5px;
+    }
+    &:focus-visible {
+        outline:#bee5fa auto 1px;
+    }
+}
 .form{
     display: flex;
     flex-direction: column;
@@ -42,4 +58,42 @@
 }
 .error{
    border-color:red;
+}
+
+@media screen and (width<=1024px) { 
+  .form .input_item.verification input {
+    width: 60%;
+   }
+}
+@media screen and (width<=991px) { 
+  .form .input_item.verification input {
+    width:50%;
+   }
+}
+@media screen and (width<=640px) { 
+  .form .input_item.verification input {
+    width:40%;
+   }
+}
+@media screen and (width<=600px) { 
+  .form {
+      width:90%;
+  }
+}
+@media screen and (width<=480px) { 
+  .form .input_item {
+      flex-direction: column;
+      label{
+         width: 100%;
+      }
+      input {
+         width: calc(100% - 0px);
+      }
+      &.verification{
+          flex-direction: row;
+          input {
+            width: 70%;
+         }
+      }
+  }
 }

@@ -9,7 +9,7 @@
             </div>
             <div class="modal-body flex justify-center  flex-col"> 
                  <div class="flex justify-center w-1/3 m-auto">
-                    <a class="btn bg-stone-200 text-black hover:bg-stone-300" @click.prevent="sendCloseAlert" >取消</a>
+                    <a class="btn bg-stone-200 text-black mr-3 hover:bg-stone-300" @click.prevent="sendCloseAlert" >取消</a>
                     <a class="btn bg-green-600 text-white hover:bg-green-800" >確定</a>
                 </div>
             </div>

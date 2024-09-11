@@ -6,7 +6,7 @@ const props = defineProps({
     messageCheckEmail: { type: String },
     messageCheckPassword: { type: String },
     messageCheckVerification: { type: String },
-    code_box: { type: String, required: true, },
+    code_box: { type: String },
     checkLoginForms: { type: Boolean },
     
     errorCheckEmail: { type: Boolean },
@@ -33,26 +33,33 @@ const sendLoginSubmit= ()=>{
 
 <template>
 <div class="form login_form mt-5">
-    <div class="text-center mb-3"><b>{{ loginTitle }}</b></div>
+    <div class="text-center mb-3">
+        <b data-test="title" >{{ loginTitle }}</b>
+    </div>
     <div class="input_item">
         <label>{{ loginLabels.email }}</label>
         <input type="text" 
+        data-test="email"
         v-model="loginForms.email"
         @blur="sendCheckEmail" 
          :placeholder="loginLabels.email"
         :class="{error:errorCheckEmail}"
          />
-         <div class="error_message">{{ messageCheckEmail }}</div>
+         <div class="error_message"
+          data-test="emailMessage">{{ messageCheckEmail }}</div>
     </div>
     
     <div class="input_item">
         <label>{{ loginLabels.password }}</label>
         <input type="password" 
+        data-test="password"
+        
         v-model="loginForms.password"
         @blur="sendCheckPassword"
          :class="{ error: errorCheckPassword }"
         :placeholder="loginLabels.password"/>
-         <div class="error_message">{{ messageCheckPassword }}</div>
+         <div class="error_message"
+         data-test="passwordMessage">{{ messageCheckPassword }}</div>
     </div>
     <div class="input_item verification" >
         <label>{{ loginLabels.verification }}</label>
@@ -69,11 +76,10 @@ const sendLoginSubmit= ()=>{
     </div>
     <div class="flex justify-center">
         <div class="flex w-64">
-        <a class="btn cancel">取消</a>
+        <a class="btn cancel mr-3">取消</a>
         <a class="btn submit"
         @click="sendLoginSubmit"
          :class="{ disabled: checkLoginForms }"
-        
         >送出</a>
         </div>
     </div>

@@ -1,5 +1,5 @@
 <template>
-<a class="link A C B"
+<a class="btn link A C B submit"
 data-test="link" 
 :href="href" :target="target">點擊</a>
 </template>
