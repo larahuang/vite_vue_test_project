@@ -4,6 +4,7 @@
   import Button from '../../components/A.vue'
 import Alert from '../../components/Alert.vue'
 import LoginForm from '../../components/LoginForm.vue'
+import Drop from '../../components/Drop.vue'
 import loginFormType from '../../types/forms'
 const { proxy } = getCurrentInstance() as any
   const title = ref<string>('Guess User Age App')
@@ -153,4 +154,5 @@ const search = ref<string>('');
         :errorCheckPassword="errorCheckPassword"
         :errorCheckVerification="errorCheckVerification"
       />
+      <Drop/>
 </template>
